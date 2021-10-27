@@ -53,9 +53,13 @@
           <h3 class="visually-hidden">Причины</h3>
           <ol class="reasons-list">
             <li class="reasons-item-city">
-              <h4 class="reasons-title">Настоящий городок</h4>
-              <p class="reason-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <img src="img/city.jpg" alt="Город Седона" width="800" height="384">
+              <div class="text-block">
+                <h4 class="reasons-title">Настоящий городок</h4>
+                <p class="reason-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <div class="img-block">
+                <img src="img/city.jpg" alt="Город Седона" width="800" height="384">
+              </div>
               <ul class="sublist">
                 <li class="sublist-item-motel">
                   <h5 class="sublist-title">Жильё</h5>
@@ -72,10 +76,16 @@
               </ul>
             </li>
             <li class="reasons-item-bridge">
-              <h4 class="reasons-title">Там есть мост дьявола</h4>
-              <p class="reason-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              <img src="img/devil's-bridge.jpg" alt="Мост Дьявола" width="800" height="384">
+              <div class="text-block">
+                <h4 class="reasons-title">Там есть<br> мост дьявола</h4>
+                <p class="reason-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
+              <div class="img-block">
+                <img src="img/devil's-bridge.jpg" alt="Мост Дьявола" width="800" height="384">
+              </div>
             </li>
+          </ol>
+          <ol class=reasons-wrapp start="3">
             <li class="reasons-item-area">
               <h4 class="reasons-title">Небольшая площадь</h4>
               <p class="reason-description">Все достопримечательности находятся очень близко</p>
@@ -107,36 +117,38 @@
         </section>
       </main>
       <footer class="page-footer">
-        <section class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button" href="https://twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Twitter</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://www.facebook.com/htmlacademy">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="footer-contact">
-          <h2 class="visually-hidden">Контакты</h2>
-          <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </section>
-        <section class="footer-website">
-          <h2 class="visually-hidden">Сайт разработчика</h2>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img src="img/htmlacademy-logo.svg" alt="https://htmlacademy.ru/" width="115" height="34">
-          </a>
-        </section>
+        <div class="page-footer-container">
+          <section class="footer-social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="button" href="https://twitter.com/htmlacademy_ru">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="https://www.facebook.com/htmlacademy">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-contact">
+            <h2 class="visually-hidden">Контакты</h2>
+            <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </section>
+          <section class="footer-website">
+            <h2 class="visually-hidden">Сайт разработчика</h2>
+            <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <img src="img/htmlacademy-logo.svg" alt="https://htmlacademy.ru/" width="115" height="34">
+            </a>
+          </section>
+        </div>
       </footer>
     </div>
   </body>

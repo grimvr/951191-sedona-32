@@ -14,7 +14,12 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -24,12 +29,36 @@ body {
 }
 
 .background-container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 100%;
   background-color: #FFFFFF;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .navigation {
+  display: flex;
+  width: 1057px;
+  margin: 0 auto;
   background-color: #FFFFFF;
+}
+
+.navigation-list {
+  width: 309px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation-user {
+  width: 250px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -51,8 +80,21 @@ body {
   background-color: #756257;
 }
 
+.inner-header {
+  width: 1057px;
+  margin: 0 auto;
+
+}
+
+.main-inner {
+  flex-grow: 1;
+}
+
 .main-index {
   text-align: center;
+  width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1;
 }
 
 .cover {
@@ -65,7 +107,15 @@ body {
   background-position: bottom, top;
 }
 
+.cover-text {
+  display: block;
+  margin: 0 auto;
+}
+
 .main-title {
+  display: block;
+  width: 720px;
+  margin: 0 auto;
   background-color: #FFFFFF;
 }
 
@@ -81,6 +131,20 @@ body {
   line-height: 36px;
 }
 
+.reasons-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sublist,
+.reasons-wrapp {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
 .reasons-title,
 .sublist-title {
   font-size: 24px;
@@ -90,32 +154,52 @@ body {
 
 .reasons-item-city,
 .reasons-item-bridge {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #83B3D3;
   color: #FFFFFF;
 }
 
+.reasons-item-bridge .img-block {
+  order: -1;
+}
+
+.text-block {
+  width: 400px;
+  flex-grow: 1;
+}
+
+.img-block img {
+  vertical-align: middle;
+}
 
 .reasons-item-area,
 .reasons-item-tourists {
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .reasons-item-road {
   background-color: rgba(131, 179, 211, 0.2);
+  width: 400px;
 }
 
 .sublist-item-motel,
 .sublist-item-gifts {
   color: #000000;
   background-color: #F0F6FA;
+  width: 400px;
 }
 
 .sublist-item-food {
   color: #000000;
   background-color: #FFFFFF;
+  width: 400px;
 }
 
 .search-hotel {
+  display: block;
+  margin: 0 auto;
   background-color: #FFFFFF;
 }
 
@@ -141,6 +225,8 @@ body {
 }
 
 .newsletter {
+  display: block;
+  margin: 0 auto;
   background-image: url("../img/newsletter-background.jpg");
   background-color: #756257;
   background-size: 100% auto;
@@ -171,6 +257,19 @@ body {
 
 .page-footer {
   background-color: #FFFFFF;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1057px;
+  margin: 0 auto;
+  justify-content: space-between;
+
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
 }
 
 .footer-social a {
@@ -212,7 +311,6 @@ body {
   text-decoration: none;
 }
 
-
 .catalog-filter-title {
   font-size: 20px;
   line-height: 26px;
@@ -249,7 +347,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-
 
 .hotel-card {
   color: #000000;
@@ -314,6 +411,18 @@ body {
   background-color: #83B3D3;
 }
 
+.pagination-container {
+  display: flex;
+  width: 1057px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+}
+
 .pagination-link {
   font-size: 20px;
   line-height: 26px;
@@ -356,4 +465,65 @@ body {
 .newsletter-inner p {
   font-size: 22px;
   line-height: 26px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter {
+  display: flex;
+  width: 1057px;
+  margin: 0 auto;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+}
+
+.infrastructure {
+  width: 150px;
+  margin-right: auto;
+}
+
+.housing {
+  width: 144px;
+  margin-left: 68px;
+}
+
+.price {
+  width: 287px;
+  margin-left: 167px;
+  margin-right: 81px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+}
+
+
+.sorting-container {
+  display: flex;
+  width: 1057px;
+  margin: 0 auto;
+}
+
+.hotel-list {
+  width: 1057px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.pagination-show-more {
+  width: 1057px;
+  margin: 0 auto;
+}
+
+.newsletter-inner {
+  display: block;
+  margin: 0 auto;
 }

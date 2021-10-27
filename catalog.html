@@ -11,7 +11,7 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="main-page.html">Главная</a>
+              <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Cедоне</a>
@@ -55,7 +55,7 @@
           </header>
           <h2 class="visually-hidden">Параметры поиска</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter-group">
+            <fieldset class="infrastructure">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -81,7 +81,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="housing">
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -107,7 +107,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="price">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <label class="catalog-filter-label">
                 от <input class="catalog-filter-input" type="number" name="min-price">₽
@@ -122,33 +122,37 @@
                 <span class="visually-hidden">Изменить максимальную цену.</span>
               </button>
             </fieldset>
-            <button class="button" type="submit">Применить</button>
-            <button class="button" type="reset">Сбросить</button>
+            <div class="button-container">
+              <button class="button" type="submit">Применить</button>
+              <button class="button" type="reset">Сбросить</button>
+            </div>
           </form>
         </div>
         <section class="catalog-hotels">
-          <h2>Найдено гостиниц:
-            <span class="js-result">38</span>
-          </h2>
-          <form class="sorting-type">
-            <label class="visually-hidden" for="sorting">Сортировка</label>
-            <select class="select-control" id="sorting" name="sorting">
-              <option value="cheap">Сначала дешёвое</option>
-              <option value="expensive">Сначала дорогое</option>
-              <option value="popular">Сначала популярное</option>
-            </select>
-            <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
-          </form>
-          <div class="sorting-button">
-            <a href="#" class="button">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a href="#" class="button">
-              <span class="visually-hidden">Показать галлерею</span>
-            </a>
-            <a href="#" class="button">
-              <span class="visually-hidden">Показать список</span>
-            </a>
+          <div class="sorting-container">
+            <h2>Найдено гостиниц:
+              <span class="js-result">38</span>
+            </h2>
+            <form class="sorting-type">
+              <label class="visually-hidden" for="sorting">Сортировка</label>
+              <select class="select-control" id="sorting" name="sorting">
+                <option value="cheap">Сначала дешёвое</option>
+                <option value="expensive">Сначала дорогое</option>
+                <option value="popular">Сначала популярное</option>
+              </select>
+              <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
+            </form>
+            <div class="sorting-button">
+              <a href="#" class="button">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+              <a href="#" class="button">
+                <span class="visually-hidden">Показать галлерею</span>
+              </a>
+              <a href="#" class="button">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </div>
           </div>
           <ul class="hotel-list">
             <li class="hotel-card">
@@ -258,35 +262,37 @@
           <div class="pagination-show-more">
             <button class="button pagination-show-more" type="button">Загрузить еще</button>
           </div>
-          <ul class="pagination-list">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
-          <form class="number-of-items">
-            <label class="title-number-of-items" for="items">Гостиниц на странице:</label>
-            <select class="select-control" id="items" name="items">
-              <option value="4">4</option>
-              <option value="12">12</option>
-              <option value="24">24</option>
-            </select>
-            <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
-          </form>
+          <div class="pagination-container">
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
+            <form class="number-of-items">
+              <label class="title-number-of-items" for="items">Гостиниц на странице:</label>
+              <select class="select-control" id="items" name="items">
+                <option value="4">4</option>
+                <option value="12">12</option>
+                <option value="24">24</option>
+              </select>
+              <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
+            </form>
+          </div>
         </section>
         <section class="newsletter-inner">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
@@ -299,36 +305,38 @@
         </section>
       </main>
       <footer class="page-footer">
-        <section class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button" href="https://twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Twitter</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://www.facebook.com/htmlacademy">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="footer-contact">
-          <h2 class="visually-hidden">Контакты</h2>
-          <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </section>
-        <section class="footer-website">
-          <h2 class="visually-hidden">Сайт разработчика</h2>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img src="img/htmlacademy-logo.svg" alt="https://htmlacademy.ru/" width="115" height="34">
-          </a>
-        </section>
+        <div class="page-footer-container">
+          <section class="footer-social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="button" href="https://twitter.com/htmlacademy_ru">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="https://www.facebook.com/htmlacademy">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-contact">
+            <h2 class="visually-hidden">Контакты</h2>
+            <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </section>
+          <section class="footer-website">
+            <h2 class="visually-hidden">Сайт разработчика</h2>
+            <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <img src="img/htmlacademy-logo.svg" alt="https://htmlacademy.ru/" width="115" height="34">
+            </a>
+          </section>
+        </div>
       </footer>
     </div>
   </body>
