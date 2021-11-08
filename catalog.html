@@ -21,7 +21,7 @@
             </li>
           </ul>
           <a href="#">
-            <img class="logo" src="img/sedona-logo.svg" alt="Перейти на главную страницу" width="138" height="70">
+            <img class="logo-link" src="img/sedona-logo.svg" alt="Перейти на главную страницу" width="138" height="70">
           </a>
           <ul class="navigation-list navigation-user">
             <li class="navigation-user-item">
@@ -46,7 +46,9 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">Главная</a>
+                <a class="breadcrumbs-link" href="index.html">
+                  <span class="visually-hidden">Главная</span>
+                </a>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
@@ -133,25 +135,27 @@
             <h2>Найдено гостиниц:
               <span class="js-result">38</span>
             </h2>
-            <form class="sorting-type">
-              <label class="visually-hidden" for="sorting">Сортировка</label>
-              <select class="select-control" id="sorting" name="sorting">
-                <option value="cheap">Сначала дешёвое</option>
-                <option value="expensive">Сначала дорогое</option>
-                <option value="popular">Сначала популярное</option>
-              </select>
-              <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
-            </form>
-            <div class="sorting-button">
-              <a href="#" class="button">
-                <span class="visually-hidden">Показать карточки</span>
-              </a>
-              <a href="#" class="button">
-                <span class="visually-hidden">Показать галлерею</span>
-              </a>
-              <a href="#" class="button">
-                <span class="visually-hidden">Показать список</span>
-              </a>
+            <div class="sorting">
+              <form class="sorting-type">
+                <label class="visually-hidden" for="sorting">Сортировка</label>
+                <select class="select-control" id="sorting" name="sorting">
+                  <option value="cheap">Сначала дешёвое</option>
+                  <option value="expensive">Сначала дорогое</option>
+                  <option value="popular">Сначала популярное</option>
+                </select>
+                <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
+              </form>
+              <div class="sorting-button">
+                <a href="#" class="button">
+                  <span class="visually-hidden">Показать карточки</span>
+                </a>
+                <a href="#" class="button">
+                  <span class="visually-hidden">Показать галлерею</span>
+                </a>
+                <a href="#" class="button">
+                  <span class="visually-hidden">Показать список</span>
+                </a>
+              </div>
             </div>
           </div>
           <ul class="hotel-list">

@@ -54,25 +54,39 @@ body {
   display: flex;
   padding: 0 72px;
   justify-content: space-between;
+  max-height: 65px;
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  width: 459px;
+  width: 464px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.navigation-item {
+  margin-right: 23px;
+}
+
+.navigation-item:last-child {
+  margin-right: 0;
+}
+
 .navigation-user {
   justify-content: flex-end;
   align-items: center;
+  padding: 14px 0;
 }
 
 .logo-link {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
+  display: block;
+  margin-bottom: -5px;
+  z-index: 1;
 }
 
 .navigation-link {
@@ -82,17 +96,24 @@ body {
   text-decoration: none;
   color: inherit;
   display: block;
-  padding: 20px 33px 20px 0;
+  padding: 20px 0px;
 }
 
 .navigation-user-item .navigation-link {
-  min-width: 18px;
-  min-height: 37px;
-  padding: 14px 0 14px 21px;
+  width: 38px;
+  height: 37px;
+  padding: 10px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.navigation-user-item:nth-last-child(2) {
+  margin-right: 33px;
 }
 
 .button-navigation-link {
   display: block;
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -101,8 +122,7 @@ body {
   text-decoration: none;
   color: #FFFFFF;
   background-color: #756257;
-  padding: 10px 34px;
-  margin: 14px 0 14px 33px;
+  padding: 6px 34px;
 }
 
 .main-inner {
@@ -136,13 +156,19 @@ body {
 .main-title {
   display: block;
   margin: 0 auto;
-  padding: 63px 240px 79px;
-  min-height: 283px;
+  padding: 63px 40px 79px;
+  min-height: 282px;
   box-sizing: border-box;
 }
 
 .main-title h2 {
-  margin: 0 0 31px;
+  margin: 0 auto 31px;
+  max-width: 720px;
+}
+
+.main-title p {
+  margin: 0 auto;
+  max-width: 720px;
 }
 
 .main-index h2 {
@@ -178,7 +204,7 @@ body {
 }
 
 .reasons-item h4 {
-  margin-top: 27px;
+  margin-top: 57px;
 }
 
 .reasons-item h4::after {
@@ -197,14 +223,15 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   box-sizing: border-box;
-  padding: 70px;
+  padding: 40px;
 }
 
 .reason-description {
   font-size: 18px;
   line-height: 21px;
   text-transform: none;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 250px;
 }
 
 .reasons-item-image {
@@ -232,7 +259,7 @@ body {
 
 .sublist-item-description {
   box-sizing: border-box;
-  padding: 70px;
+  padding: 40px;
 }
 
 .reasons-sublist {
@@ -254,7 +281,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin-top: 114px;
+  margin-top: 144px;
   margin-bottom: 20px;
 }
 
@@ -268,7 +295,7 @@ body {
   background-color: #FFFFFF;
   min-height: 417px;
   box-sizing: border-box;
-  padding: 91px 240px;
+  padding: 91px 40px;
 }
 
 .header-style {
@@ -278,13 +305,14 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   background-color: inherit;
-  margin-bottom: 29px;
+  max-width: 720px;
+  margin: 0 auto 29px;
 }
 
-.search-hotel p {
+.text-style {
   line-height: 26px;
-  margin-top: 0;
-  margin-bottom: 58px;
+  margin: 0 auto 58px;
+  max-width: 720px;
 }
 
 .search-hotel-link {
@@ -306,7 +334,7 @@ body {
   color: #FFFFFF;
   min-height: 417px;
   box-sizing: border-box;
-  padding: 94px 200px;
+  padding: 94px 40px;
 }
 
 .newsletter h2 {
@@ -314,14 +342,15 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 29px;
+  margin: 0 auto 29px;
+  max-width: 720px;
 }
 
 .newsletter p {
   color: #FFFFFF;
   margin-top: 0;
-  margin-bottom: 46px;
+  margin: 0 auto 46px;
+  max-width: 720px;
 }
 
 .newsletter-button {
@@ -390,34 +419,49 @@ body {
   text-decoration: none;
 }
 
-.htmlacademy-link img {
-  margin-left: auto;
-}
-
 .cover-inner {
   color: #FFFFFF;
   background-image: url("../img/catalog-background.jpg");
   background-color: #333333;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  padding: 0 72px;
+  padding: 35px 72px 0;
+  min-height: 408px;
+  box-sizing: border-box;
+  margin-bottom: 44px;
 }
 
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  margin: 0;
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 16px;
   line-height: 21px;
   list-style: none;
+  margin: 0 0 45px;
+  padding: 0;
+}
+
+.breadcrumbs-item {
+  margin-right: 26px;
 }
 
 .breadcrumbs-link {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.breadcrumbs-link span {
+  display: block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
 }
 
 .catalog-filter-title {
@@ -448,6 +492,7 @@ body {
   line-height: 39px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .select-control {
@@ -455,10 +500,26 @@ body {
   line-height: 23px;
 }
 
+.sorting-container {
+  display: flex;
+  min-height: 48px;
+  margin-bottom: 42px;
+}
+
+.sorting-type {
+  margin-right: 81px;
+}
+
+.sorting {
+  margin-left: auto;
+}
+
 .sorting-button a {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  width: 48px;
+  height: 48px;
 }
 
 .hotel-card {
@@ -514,7 +575,10 @@ body {
   border-bottom: 1px solid #E5E5E5;
   display: block;
   max-width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 31px;
+  padding: 30px 215px;
 }
 
 .button.pagination-show-more {
@@ -525,6 +589,11 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #83B3D3;
+  width: 625px;
+  height: 55px;
+  border: none;
+  padding: 15px;
+  margin: 0;
 }
 
 .pagination-container {
@@ -533,11 +602,27 @@ body {
 }
 
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.pagination-item {
+  margin-right: 8px;
+}
+
+.pagination-list:last-child {
+  margin-right: 0;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  padding: 15px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -565,7 +650,11 @@ body {
 }
 
 .newsletter-inner {
+  display: block;
+  box-sizing: border-box;
   text-align: center;
+  min-height: 450px;
+  padding: 89px 40px 137px;
 }
 
 .newsletter-inner h2 {
@@ -574,16 +663,15 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+  margin: 0 auto 29px;
+  max-width: 720px;
 }
 
 .newsletter-inner p {
   font-size: 22px;
   line-height: 26px;
-}
-
-.breadcrumbs {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto 46px;
+  max-width: 720px;
 }
 
 .catalog-filter {
@@ -618,13 +706,10 @@ body {
   width: 160px;
 }
 
-.sorting-container {
-  display: flex;
-}
-
 .hotel-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .newsletter-inner {
