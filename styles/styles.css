@@ -913,6 +913,7 @@ body {
   display: block;
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .search-result-image:hover {
