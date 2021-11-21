@@ -20,8 +20,8 @@
               <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <a class="logo-link" href="index.html">
-            <img class="logo" src="img/sedona-logo.svg" alt="Перейти на главную страницу" width="138" height="70">
+          <a class="logo-link" href="index.html" aria-label="Перейти на главную страницу">
+            <img class="logo" src="img/sedona-logo.svg" alt="sedona-logo" width="138" height="70">
           </a>
           <ul class="navigation-list navigation-user">
             <li class="navigation-user-item">
@@ -124,12 +124,12 @@
               <div class="range">
                 <div class="range-wrapper-inputs">
                   <p class="field-group-range-input">
-                    <label class="catalog-filter-label">oт</label>
-                    <input class="range-input" type="number" value="0" name="min-price">
+                    <label class="catalog-filter-label" for="min-price">oт</label>
+                    <input class="range-input" type="number" value="0" id="min-price" name="min-price">
                   </p>
                   <p class="field-group-range-input">
-                    <label class="catalog-filter-label">до</label>
-                    <input class="range-input" type="number" value="9000" name="max-price">
+                    <label class="catalog-filter-label" for="max-price">до</label>
+                    <input class="range-input" type="number" value="9000" id="max-price" name="max-price">
                   </p>
                 </div>
                 <div class="range-scale">
@@ -156,7 +156,7 @@
               <span class="js-result">38</span>
             </h2>
             <div class="sorting">
-              <form class="sorting-type">
+              <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="visually-hidden" for="sorting">Сортировка</label>
                 <select class="select-control" id="sorting" name="sorting">
                   <option value="cheap">Сначала дешёвое</option>
@@ -208,7 +208,11 @@
                 </h3>
                 <div class="search-result-info">
                   <p>Гостиница</p>
-                  <p>От 4000 ₽</p>
+                  <p>От 4000
+                    <svg width="10" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M.594 6.952h1.278V.526C2.328.418 2.814.345999 3.33.309999 3.858.274 4.38.256 4.896.256c.552 0 1.092.054 1.62.161999.54.108 1.014.306 1.422.594001.42.288.756.678 1.008 1.17.252.492.378 1.122.378 1.89 0 .756-.132 1.386-.396 1.89-.252.504-.594.912-1.026 1.224-.42.312-.906.534-1.458.666-.54.132-1.092.204-1.656.216l-1.422.018v1.278h2.988v1.116H3.366V13H1.872v-2.52H.594V9.364h1.278V8.068H.594V6.952Zm4.338-5.436c-.312 0-.612.012-.9.036-.276.012-.498.036-.666.072v5.22h1.368c.36 0 .72-.036 1.08-.108.36-.072.684-.21.972-.414.288-.204.522-.48.702-.828.18-.36.264-.828.252-1.404.012-.492-.06-.9-.216-1.224-.144-.336-.348-.6-.612-.792-.252-.204-.552-.348-.9-.432-.336-.084-.696-.126-1.08-.126Z" fill="#333"/>
+                    </svg>
+                  </p>
                   <a class="button button-secondary search-result-link" href="#">Подробнее</a>
                   <a class="button button-primary search-result-link" href="#">В избранное</a>
                 </div>
@@ -217,7 +221,12 @@
                 <img src="img/amara-resort-and-spa.jpg" alt="Amara Resort & Spa" width="180" height="120">
               </a>
               <div class="search-result-rating-block">
-                <div class="search-result-stars">★★★★</div>
+                <div class="search-result-stars">
+                  <span class="star-icon"></span>
+                  <span class="star-icon"></span>
+                  <span class="star-icon"></span>
+                  <span class="star-icon"></span>
+                </div>
                 <p class="search-result-rating">Рейтинг: 8,5</p>
               </div>
             </li>
@@ -228,7 +237,11 @@
                 </h3>
                 <div class="search-result-info">
                   <p>Мотель</p>
-                  <p>От 3000 ₽</p>
+                  <p>От 3000
+                    <svg width="10" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M.594 6.952h1.278V.526C2.328.418 2.814.345999 3.33.309999 3.858.274 4.38.256 4.896.256c.552 0 1.092.054 1.62.161999.54.108 1.014.306 1.422.594001.42.288.756.678 1.008 1.17.252.492.378 1.122.378 1.89 0 .756-.132 1.386-.396 1.89-.252.504-.594.912-1.026 1.224-.42.312-.906.534-1.458.666-.54.132-1.092.204-1.656.216l-1.422.018v1.278h2.988v1.116H3.366V13H1.872v-2.52H.594V9.364h1.278V8.068H.594V6.952Zm4.338-5.436c-.312 0-.612.012-.9.036-.276.012-.498.036-.666.072v5.22h1.368c.36 0 .72-.036 1.08-.108.36-.072.684-.21.972-.414.288-.204.522-.48.702-.828.18-.36.264-.828.252-1.404.012-.492-.06-.9-.216-1.224-.144-.336-.348-.6-.612-.792-.252-.204-.552-.348-.9-.432-.336-.084-.696-.126-1.08-.126Z" fill="#333"/>
+                    </svg>
+                  </p>
                   <a class="button button-secondary search-result-link" href="#">Подробнее</a>
                   <a class="button button-primary search-result-link" href="#">В избранное</a>
                 </div>
@@ -237,7 +250,11 @@
                 <img src="img/desert-quail-inn.jpg" alt="Desert Quail Inn" width="180" height="120">
               </a>
               <div class="search-result-rating-block">
-                <div class="search-result-stars">★★★</div>
+                <div class="search-result-stars">
+                  <span class="star-icon"></span>
+                  <span class="star-icon"></span>
+                  <span class="star-icon"></span>
+                </div>
                 <p class="search-result-rating">Рейтинг: 8,9</p>
               </div>
             </li>
@@ -248,7 +265,11 @@
                 </h3>
                 <div class="search-result-info">
                   <p>Апартаменты</p>
-                  <p>От 2000 ₽</p>
+                  <p>От 2000
+                    <svg width="10" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M.594 6.952h1.278V.526C2.328.418 2.814.345999 3.33.309999 3.858.274 4.38.256 4.896.256c.552 0 1.092.054 1.62.161999.54.108 1.014.306 1.422.594001.42.288.756.678 1.008 1.17.252.492.378 1.122.378 1.89 0 .756-.132 1.386-.396 1.89-.252.504-.594.912-1.026 1.224-.42.312-.906.534-1.458.666-.54.132-1.092.204-1.656.216l-1.422.018v1.278h2.988v1.116H3.366V13H1.872v-2.52H.594V9.364h1.278V8.068H.594V6.952Zm4.338-5.436c-.312 0-.612.012-.9.036-.276.012-.498.036-.666.072v5.22h1.368c.36 0 .72-.036 1.08-.108.36-.072.684-.21.972-.414.288-.204.522-.48.702-.828.18-.36.264-.828.252-1.404.012-.492-.06-.9-.216-1.224-.144-.336-.348-.6-.612-.792-.252-.204-.552-.348-.9-.432-.336-.084-.696-.126-1.08-.126Z" fill="#333"/>
+                    </svg>
+                  </p>
                   <a class="button button-secondary search-result-link" href="#">Подробнее</a>
                   <a class="button button-primary search-result-link current" href="#">В избранном</a>
                 </div>
@@ -257,7 +278,10 @@
                 <img src="img/villas-at-poco-diablo.jpg" alt="Villas at Poco Diablo" width="180" height="120">
               </a>
               <div class="search-result-rating-block">
-                <div class="search-result-stars">★★</div>
+                <div class="search-result-stars">
+                  <span class="star-icon"></span>
+                  <span class="star-icon"></span>
+                </div>
                 <p class="search-result-rating">Рейтинг: 9,2</p>
               </div>
             </li>
@@ -268,7 +292,11 @@
                 </h3>
                 <div class="search-result-info">
                   <p>Гостиница</p>
-                  <p>От 3000 ₽</p>
+                  <p>От 3000
+                    <svg width="10" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M.594 6.952h1.278V.526C2.328.418 2.814.345999 3.33.309999 3.858.274 4.38.256 4.896.256c.552 0 1.092.054 1.62.161999.54.108 1.014.306 1.422.594001.42.288.756.678 1.008 1.17.252.492.378 1.122.378 1.89 0 .756-.132 1.386-.396 1.89-.252.504-.594.912-1.026 1.224-.42.312-.906.534-1.458.666-.54.132-1.092.204-1.656.216l-1.422.018v1.278h2.988v1.116H3.366V13H1.872v-2.52H.594V9.364h1.278V8.068H.594V6.952Zm4.338-5.436c-.312 0-.612.012-.9.036-.276.012-.498.036-.666.072v5.22h1.368c.36 0 .72-.036 1.08-.108.36-.072.684-.21.972-.414.288-.204.522-.48.702-.828.18-.36.264-.828.252-1.404.012-.492-.06-.9-.216-1.224-.144-.336-.348-.6-.612-.792-.252-.204-.552-.348-.9-.432-.336-.084-.696-.126-1.08-.126Z" fill="#333"/>
+                    </svg>
+                  </p>
                   <a class="button button-secondary search-result-link" href="#">Подробнее</a>
                   <a class="button button-primary search-result-link" href="#">В избранное</a>
                 </div>
@@ -277,7 +305,10 @@
                 <img src="img/greentree-inn.jpg" alt="GreenTree Inn" width="180" height="120">
               </a>
               <div class="search-result-rating-block">
-                <div class="search-result-stars">★★</div>
+                <div class="search-result-stars">
+                  <span class="star-icon"></span>
+                  <span class="star-icon"></span>
+                </div>
                 <p class="search-result-rating">Рейтинг: 9,2</p>
               </div>
             </li>
@@ -306,7 +337,7 @@
                 <a class="button button-primary pagination-link" href="#">10</a>
               </li>
             </ul>
-            <form class="number-of-items">
+            <form class="number-of-items" action="https://echo.htmlacademy.ru/" method="get">
               <label class="title-number-of-items" for="items">Гостиниц на странице:</label>
               <select class="select-control" id="items" name="items">
                 <option value="4">4</option>
