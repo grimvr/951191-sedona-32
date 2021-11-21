@@ -88,8 +88,8 @@ body {
 
 .button-secondary:focus {
   outline: none;
-  background-color: #68a2ca;
-  box-shadow: 0 0 0 3px #756257;
+  background-color: #615048;
+  box-shadow: 0 0 0 3px #83B3D3;
 }
 
 .button-primary.current:focus {
@@ -869,6 +869,11 @@ body {
 .search-form-field::-webkit-outer-spin-button,
 .search-form-field::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .search-form-field::placeholder {
