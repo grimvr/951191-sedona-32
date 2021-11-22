@@ -268,7 +268,7 @@ body {
   bottom: -17px;
   left: 8px;
   height: 2px;
-  content: '';
+  content: "";
   background-color: #756257;
 }
 
@@ -325,9 +325,10 @@ body {
 }
 
 .subtitle {
+  margin: 0;
   font-size: 22px;
   line-height: 36px;
-  margin: 0;
+  color: #333;
 }
 
 .reasons-list {
@@ -362,9 +363,18 @@ body {
   line-height: 21px;
   display: block;
   margin-top: 30px;
-  content: '—№'counter(li)'—';
+  content: "—№"counter(li)"—";
   counter-increment: li;
   text-transform: none;
+  color: #333;
+}
+
+.reasons-item:first-child h4::after {
+  color: #fff;
+}
+
+.reasons-item:nth-child(2) h4::after {
+  color: #fff;
 }
 
 .reasons-item-description {
@@ -378,9 +388,14 @@ body {
 .reason-description {
   font-size: 18px;
   line-height: 21px;
+  color: #333;
   max-width: 230px;
   margin: 0 auto;
   text-transform: none;
+}
+
+.light {
+  color: #fff;
 }
 
 .reasons-item-image {
@@ -480,6 +495,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   line-height: 26px;
+  color: #333;
   max-width: 700px;
   margin: 0 auto 58px;
 }
@@ -600,6 +616,7 @@ body {
   margin: 0 50px 0 61px;
   padding: 25px 0;
   grid-template-columns: 300px auto 300px;
+  align-items: center;
 }
 
 .footer-social {
@@ -953,7 +970,7 @@ input[type=number] {
   left: 48%;
   width: 19px;
   height: 19px;
-  content: '';
+  content: "";
   transform: rotate(45deg);
   background-color: #333;
 }
@@ -961,6 +978,7 @@ input[type=number] {
 .form-description {
   font-size: 16px;
   font-weight: 400;
+  color: #333;
   margin: 0  0 15px 155px;
 }
 
@@ -1031,11 +1049,6 @@ input[type=number] {
 .button-minus:active .minus-icon,
 .button-plus:active .plus-icon  {
   fill: rgba(0, 0, 0, 0.2);
-}
-
-.button-minus:active,
-.button-plus:active  {
-  border: none;
 }
 
 .cover-inner {
@@ -1284,7 +1297,6 @@ input[type=number] {
 }
 
 .search-result-description {
-  max-width: 680px;
   flex-grow: 1;
 }
 
@@ -1296,10 +1308,6 @@ input[type=number] {
   flex: none;
   order: -1;
   align-self: center;
-}
-
-.search-result-link {
-  white-space: nowrap;
 }
 
 .search-result-image img {
@@ -1348,7 +1356,7 @@ input[type=number] {
   right: -12px;
   bottom: -10px;
   left: -12px;
-  content: '';
+  content: "";
   color: #756257;
   border: 3px solid #83b3d3;
   border-radius: 10px;
@@ -1363,12 +1371,21 @@ input[type=number] {
 .search-result-info {
   line-height: 23px;
   display: grid;
-  grid-template-columns: min-content min-content;
+  grid-template-columns: 152px 161px;
   grid-gap: 33px 8px;
 }
 
 .search-result-info p {
   margin: 0;
+  color: #333;
+}
+
+.button-primary.search-result-link {
+  padding: 9px 30px;
+}
+
+.button-primary.current {
+  padding: 9px 28px;
 }
 
 .search-result-rating-block {
@@ -1406,6 +1423,7 @@ input[type=number] {
   padding: 10px 20px 9px;
   text-align: center;
   text-transform: uppercase;
+  color: #333;
   border-radius: 4px;
   background-color: #f2f2f2;
 }
@@ -1479,6 +1497,7 @@ input[type=number] {
 .number-of-items {
   font-size: 18px;
   line-height: 23px;
+  color: #333;
   display: flex;
   max-width: 50%;
   align-items: center;
@@ -1506,6 +1525,7 @@ input[type=number] {
 .newsletter-inner p {
   font-size: 22px;
   line-height: 26px;
+  color: #333;
   max-width: 540px;
   margin: 0 auto 46px;
 }
@@ -1587,7 +1607,7 @@ input[type=number] {
   left: 5px;
   width: 10px;
   height: 10px;
-  content: '';
+  content: "";
   border-radius: 50%;
   background-color: #3f5e72;
 }
@@ -1764,6 +1784,7 @@ input[type=number] {
   padding: 10px 35px 10px 17px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  color: #333;
   background-color: #fff;
   background-image: url('../img/select-arrow.svg');
   background-repeat: no-repeat;
@@ -1940,7 +1961,7 @@ input[type=number] {
   left: 188px;
   width: 20px;
   height: 20px;
-  content: '';
+  content: "";
   transform: rotate(45deg);
   border-top: 1px solid #e5e5e5;
   border-left: 1px solid #e5e5e5;
@@ -1956,7 +1977,7 @@ input[type=number] {
   left: 20px;
   width: 19px;
   height: 19px;
-  content: '12';
+  content: "12";
   text-align: center;
   color: #fff;
   border-radius: 50%;
